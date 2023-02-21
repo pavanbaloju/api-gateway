@@ -1,0 +1,8 @@
+spring:
+  cloud:
+    gateway:
+      routes:
+        - id: google_home
+          uri: https://www.google.co.in/
+          predicates:
+            - Path=/
